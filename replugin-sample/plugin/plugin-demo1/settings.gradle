@@ -14,4 +14,7 @@
  * the License.
  */
 
-include ':app', ':library'
+include ':app', ':library', ':replugin-plugin-lib'
+
+project(':replugin-plugin-lib').projectDir = new File(
+        rootProject.projectDir, '../../../replugin-plugin-library/replugin-plugin-lib')
